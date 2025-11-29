@@ -49,7 +49,6 @@ class Player(CircleShape):
 
     def shoot(self):
         if self.shot_cooldown > 0:
-            print(f"Wait for shot_cooldown: {self.shot_cooldown}")
             return
 
         self.shot_cooldown = PLAYER_SHOOT_COOLDOWN_SECONDS
